@@ -1,0 +1,108 @@
+/* General styling for the entire app */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the search box container */
+.search-box {
+  margin-bottom: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for the label inside the search box */
+.search-box label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  color: #aed9e0;
+}
+
+/* Styling for the input field inside the search box */
+.search-box input[type="text"] {
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.search-box input[type="text"]:focus {
+  border-color: #aed9e0;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Styling for the search button */
+.search-box button {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.search-box button:hover {
+  background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the ReactPlayer component */
+.ReactPlayer {
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 80%;
+}
+
+.ReactPlayer:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .search-box input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .ReactPlayer {
+    max-width: 100%;
+  }
+}
